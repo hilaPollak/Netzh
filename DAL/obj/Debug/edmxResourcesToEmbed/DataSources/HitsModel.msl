@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HitsModelStoreContainer" CdmEntityContainer="HitsEntities">
+    <EntitySetMapping Name="Reports">
+      <EntityTypeMapping TypeName="IsTypeOf(HitsModel.Report)">
+        <MappingFragment StoreEntitySet="Reports">
+          <ScalarProperty Name="ReportID" ColumnName="ReportID" />
+          <ScalarProperty Name="TimeFalling" ColumnName="TimeFalling" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="ReporterID" ColumnName="ReporterID" />
+          <ScalarProperty Name="AddressCoordinates" ColumnName="AddressCoordinates" />
+          <ScalarProperty Name="NumberOfBooms" ColumnName="NumberOfBooms" />
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reporters">
+      <EntityTypeMapping TypeName="IsTypeOf(HitsModel.Reporter)">
+        <MappingFragment StoreEntitySet="Reporters">
+          <ScalarProperty Name="ReporterID" ColumnName="ReporterID" />
+          <ScalarProperty Name="ReporterName" ColumnName="ReporterName" />
+          <ScalarProperty Name="ReporterAddress" ColumnName="ReporterAddress" />
+          <ScalarProperty Name="LatLongAddress" ColumnName="LatLongAddress" />
+          <ScalarProperty Name="ReporterProfilePicture" ColumnName="ReporterProfilePicture" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UpdatedReports">
+      <EntityTypeMapping TypeName="IsTypeOf(HitsModel.UpdatedReport)">
+        <MappingFragment StoreEntitySet="UpdatedReports">
+          <ScalarProperty Name="ReportID" ColumnName="ReportID" />
+          <ScalarProperty Name="NewCoordinates" ColumnName="NewCoordinates" />
+          <ScalarProperty Name="NewTime" ColumnName="NewTime" />
+          <ScalarProperty Name="NumberOfHits" ColumnName="NumberOfHits" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

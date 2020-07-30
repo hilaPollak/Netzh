@@ -1,0 +1,282 @@
+﻿<Window x:Class="Hits.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hits"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:Grids="clr-namespace:Hits.Views.Grids"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1024" WindowStyle="None" WindowStartupLocation="CenterScreen"
+        Foreground="Black">
+    <!--#region Window resources and triggers-->
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="0"/>
+    </WindowChrome.WindowChrome>
+    <Window.Resources>
+
+    </Window.Resources>
+
+    <!--#endregion Window resources and triggers-->
+
+    <!--#region Main grid-->
+    <Grid Background="#FF28457A">
+        <!--#region Menu-->
+        <StackPanel x:Name="StackPanelMenu" Width="250" Background="#FF28457A" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5">
+            <StackPanel.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </StackPanel.RenderTransform>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="100" HorizontalAlignment="Center">
+                <Button x:Name="button" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" BorderBrush="{x:Null}" Padding="0" Width="80" Height="80" Margin="10" RenderTransformOrigin="0.5,0.5">
+                    <Button.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Button.RenderTransform>
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Hits;component/eagle.png" Stretch="UniformToFill"/>
+                    </Button.Background>
+                </Button>
+                <TextBlock TextWrapping="Wrap" Text="Netzh" FontSize="43" FontFamily="Stencil" Margin="0,45,0,0" Foreground="White" FontStretch="ExtraExpanded" Width="156"/>
+            </StackPanel>
+            <ListView>
+                <ListViewItem Tag="{Binding ElementName=HomeGrid}"  x:Name="listViewItem" Height="60" RenderTransformOrigin="0.5,0.5" PreviewMouseDown="SwitchGridEvent">
+
+                    <StackPanel Orientation="Horizontal" Margin="10 0">
+                        <materialDesign:PackIcon Foreground="{StaticResource IconColr}" Kind="InformationOutline" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <TextBlock Foreground="{StaticResource IconColr}" Text="About Us" FontFamily="Century Gothic" Margin="10" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem Tag="{Binding ElementName=ReporterGrid}" x:Name="listViewItem1" Height="60" RenderTransformOrigin="0.5,0.5" PreviewMouseDown="SwitchGridEvent">
+                    <ListViewItem.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </ListViewItem.RenderTransform>
+                    <StackPanel Orientation="Horizontal" Margin="10 0">
+                        <materialDesign:PackIcon Foreground="{StaticResource IconColr}" Kind="Person" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <TextBlock Foreground="{StaticResource IconColr}" Text="Register" FontFamily="Century Gothic" Margin="10" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem Tag="{Binding ElementName=ReportGrid}" x:Name="listViewItem2" Height="60" RenderTransformOrigin="0.5,0.5" PreviewMouseDown="SwitchGridEvent">
+                    <ListViewItem.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </ListViewItem.RenderTransform>
+                    <StackPanel Orientation="Horizontal" Margin="10 0">
+                        <materialDesign:PackIcon Foreground="{StaticResource IconColr}" Kind="Add"  Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <TextBlock Foreground="{StaticResource IconColr}" Text="New Report" FontFamily="Century Gothic" Margin="10" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem Tag="{Binding ElementName=UpdateReportGrid}" x:Name="listViewItem3" Height="60" RenderTransformOrigin="0.5,0.5" PreviewMouseDown="SwitchGridEvent">
+                    <ListViewItem.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </ListViewItem.RenderTransform>
+                    <StackPanel Orientation="Horizontal" Margin="10 0">
+                        <materialDesign:PackIcon Foreground="{StaticResource IconColr}" Kind="Update" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <TextBlock Foreground="{StaticResource IconColr}" Text="Update Report" FontFamily="Century Gothic" Margin="10" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem Tag="{Binding ElementName=AnalysisGrid}" x:Name="listViewItem4" Height="60" RenderTransformOrigin="0.5,0.5" PreviewMouseDown="SwitchGridEvent">
+                    <ListViewItem.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </ListViewItem.RenderTransform>
+                    <StackPanel Orientation="Horizontal" Margin="10 0">
+                        <materialDesign:PackIcon Foreground="{StaticResource IconColr}" Kind="Graphql" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <TextBlock Foreground="{StaticResource IconColr}" Text="Analysis" FontFamily="Century Gothic" Margin="10" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem Tag="{Binding ElementName=AllReportGrid}" x:Name="listViewItem5" Height="60" RenderTransformOrigin="0.5,0.5" PreviewMouseDown="SwitchGridEvent">
+                    <ListViewItem.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </ListViewItem.RenderTransform>
+                    <StackPanel Orientation="Horizontal" Margin="10 0">
+                        <materialDesign:PackIcon Foreground="{StaticResource IconColr}" Kind="Table" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <TextBlock Foreground="{StaticResource IconColr}" Text="All Reports" FontFamily="Century Gothic" Margin="10" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </ListViewItem>
+            </ListView>
+        </StackPanel>
+        <!--#endregion Menu-->
+
+        <!--#region Grid switching-->
+
+        <Grid x:Name="HomeGrid" Background="LightGray" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Margin="250,50,-2,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="750*"/>
+
+            </Grid.ColumnDefinitions>
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Grid.RenderTransform>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="76"/>
+                <RowDefinition Height="235"/>
+                <RowDefinition Height="139"/>
+
+            </Grid.RowDefinitions>
+            <TextBlock Text=" INFORMATION" FontFamily="Century Gothic" Foreground="#FF28457A"  FontSize="30" FontWeight="Bold" Margin="29,5,5,5" Grid.Row="1"/>
+            <TextBlock Text="This app receives real-time missile reports from the field." FontFamily="Century Gothic" Foreground="#FF28457A" FontSize="16" Margin="29,15,0,10" Grid.Row="2"/>
+            <TextBlock Text="And according to a particular algorithm calculates the exact location of the missile's fall." FontFamily="Century Gothic" Foreground="#FF28457A" FontSize="16" Margin="29,1,4,42" Grid.Row="3"/>
+            <StackPanel HorizontalAlignment="Left" Height="103" Margin="160,10,0,0" Grid.Row="5" VerticalAlignment="Top" Width="440">
+                <Grid Height="92" Margin="0,0,10,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+
+                    </Grid.RowDefinitions>
+                    <TextBox TextWrapping="Wrap" Text="Learn more" FontSize="20" FontFamily="Century Gothic" SelectionBrush="#FF28457A" CaretBrush="#FF28457A" Foreground="#FF28457A" HorizontalAlignment="Center" Margin="159,10,159,1"/>
+
+                    <materialDesign:PackIcon Foreground="#FF28457A" Kind="FacebookBox" Width="30" Height="30" VerticalAlignment="Center" Margin="198,10,212,10" HorizontalAlignment="Center" MouseDown="Facebook"  RenderTransformOrigin="0.933,1.667" Grid.Row="1"/>
+                </Grid>
+            </StackPanel>
+            <TextBlock HorizontalAlignment="Center" Text="For any kind of emergency please call now: 
+                       police 100 
+                       
+                       mada 101" FontSize="15" Foreground="#FF28457A" Height="74" Margin="29,36,420,125" Grid.Row="4" TextWrapping="Wrap" Width="319" FontFamily="Century Gothic" VerticalAlignment="Center"  />
+            <Button x:Name="button_Copy" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" BorderBrush="{x:Null}" Padding="0" Width="Auto" Height="68" Margin="402,0,300,15" RenderTransformOrigin="0.5,0.5" Grid.Row="4" VerticalAlignment="Bottom">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Button.Background>
+                    <ImageBrush ImageSource="/Hits;component/hila.jpg" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="button_Copy1" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" BorderBrush="{x:Null}" Padding="0" Width="Auto" Height="69" Margin="122,0,580,14" RenderTransformOrigin="0.5,0.5" Grid.Row="4" VerticalAlignment="Bottom">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Button.Background>
+                    <ImageBrush ImageSource="/Hits;component/michal2.jpg" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+            <TextBox HorizontalAlignment="Left" Foreground="#FF28457A" Height="39" Margin="325,95,0,0" Grid.Row="4" TextWrapping="Wrap" Text="Creators" VerticalAlignment="Top" Width="93" FontFamily="Century Gothic" FontSize="20"/>
+            <StackPanel HorizontalAlignment="Left" Height="80" Margin="207,157,0,0" Grid.Row="4" VerticalAlignment="Top" Width="157" Grid.RowSpan="2">
+                <TextBlock Height="23" TextWrapping="Wrap" Text="Michal Schaalmann" FontFamily="Century Gothic"/>
+                <TextBlock Height="23" TextWrapping="Wrap" Text="200062966" FontFamily="Century Gothic"/>
+                <TextBlock Height="23" TextWrapping="Wrap" Text="michalsch97@gmail.com" FontFamily="Century Gothic"/>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left" Height="80" Margin="487,157,0,0" Grid.Row="4" VerticalAlignment="Top" Width="176" Grid.RowSpan="2">
+                <TextBlock Height="23" TextWrapping="Wrap" Text="Hila Shamay" FontFamily="Century Gothic"/>
+                <TextBlock Height="23" TextWrapping="Wrap" Text="208782433" FontFamily="Century Gothic"/>
+                <TextBlock Height="23" TextWrapping="Wrap" Text="hilashamay4@gmail.com" FontFamily="Century Gothic"/>
+            </StackPanel>
+            <TextBlock Text="In addition, the app includes a tool for analyzing the accuracy of the algorithm calculation." FontFamily="Century Gothic" Foreground="#FF28457A" FontSize="16" Margin="29,39,4,4" Grid.Row="3"/>
+        </Grid>
+        <Grid x:Name="ReporterGrid" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5">
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Grid.RenderTransform>
+            <Grids:ReporterGrid/>
+        </Grid>
+        <Grid x:Name="ReportGrid" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5">
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Grid.RenderTransform>
+            <Grids:ReportGrid/>
+        </Grid>
+        <Grid x:Name="UpdateReportGrid" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5">
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Grid.RenderTransform>
+            <Grids:UpdateReportGrid/>
+        </Grid>
+        <Grid x:Name="AllReportGrid" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5">
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Grid.RenderTransform>
+            <Grids:AllReportGrid/>
+        </Grid>
+        <Grid x:Name="AnalysisGrid" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5">
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Grid.RenderTransform>
+            <Grids:AnalysisGrid/>
+        </Grid>
+
+        <!--#endregion-->
+
+        <!--#region Power buttons-->
+
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Height="40" HorizontalAlignment="Right" Margin="10">
+            <Button Foreground="{StaticResource IconColr}" x:Name="ButtonClose" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="39" Height="Auto" Padding="0" Background="{x:Null}" BorderBrush="{x:Null}" Click="ButtonClose_Click" Margin="0,0,0,7">
+                <materialDesign:PackIcon Kind="Power" Height="25" Width="34"/>
+            </Button>
+        </StackPanel>
+        <!--#endregion-->
+    </Grid>
+    <!--#endregion-->
+</Window>

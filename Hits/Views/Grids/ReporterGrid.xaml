@@ -1,0 +1,121 @@
+﻿<UserControl x:Class="Hits.Views.Grids.ReporterGrid" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:m="clr-namespace:Microsoft.Maps.MapControl.WPF;assembly=Microsoft.Maps.MapControl.WPF"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:toolkit="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Input.Toolkit"
+             xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+             xmlns:Converters="clr-namespace:Hits.Helpers.Converters"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:vm="clr-namespace:BL.ViewModels;assembly=BL"
+             xmlns:System="clr-namespace:System;assembly=mscorlib"
+             xmlns:local="clr-namespace:Hits.Views.Grids"
+             mc:Ignorable="d" Height="600" Width="1024">
+    <UserControl.DataContext>
+        <vm:ReporterViewModel x:Name="reporterViewModel"/>
+    </UserControl.DataContext>
+    <UserControl.Resources>
+        <Converters:TimeToStringConverter x:Key="TimeToString"/>
+        <Converters:IntStringConverter x:Key="IntToString"/>
+        <Converters:StringLocationConverter x:Key="StringToLocation"/>
+        <Converters:ByteArrayToPNG x:Key="ImageToByteArray"/>
+        <Style x:Key="MyTextBoxStyle" TargetType="TextBox" BasedOn="{StaticResource MaterialDesignTextBox}">
+            <Setter Property="Foreground" Value="{StaticResource TextColor}"/>
+            <Setter Property="FontSize" Value="{StaticResource TextSize}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource TitleTextColor}"/>
+        </Style>
+        <Storyboard x:Key="Added">
+            <ObjectAnimationUsingKeyFrames BeginTime="0:0:0" Storyboard.TargetName="SuccessLabel" Storyboard.TargetProperty="Visibility">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:3" Value="{x:Static Visibility.Collapsed}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Failed">
+            <ObjectAnimationUsingKeyFrames BeginTime="0:0:0" Storyboard.TargetName="FailedLabel" Storyboard.TargetProperty="Visibility">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:3" Value="{x:Static Visibility.Collapsed}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
+    <UserControl.Triggers>
+        <EventTrigger RoutedEvent="ToggleButton.Checked" SourceName="checkBox1">
+            <BeginStoryboard Storyboard="{StaticResource Added}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ToggleButton.Checked" SourceName="checkBox2">
+            <BeginStoryboard Storyboard="{StaticResource Failed}"/>
+        </EventTrigger>
+    </UserControl.Triggers>
+    <Grid x:Name="GridTest" Background="LightGray"  Margin="250,42,2,0" RenderTransformOrigin="0.5,0.5" Visibility="Visible">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="REGISTER" FontFamily="Century Gothic" Foreground="#FF28457A" FontSize="30" FontWeight="Bold" Margin="50,15,-40,307" Grid.Row="1" Grid.RowSpan="2"/>
+            <Grid x:Name="grid" Margin="50 10 50 10" Grid.Row="2" Grid.ColumnSpan="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="4*"/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="textBox" FontFamily="Century Gothic" Foreground="#FF28457A"
+                         Text="{Binding Path=Reporter.ReporterName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" 
+                         materialDesign:HintAssist.Hint="Enter your name here" materialDesign:HintAssist.IsFloating="True"
+                         VerticalAlignment="Bottom" 
+                         Style="{StaticResource MyTextBoxStyle}" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,12"/>
+                <TextBox Grid.Row="1" FontFamily="Century Gothic" Foreground="#FF28457A"
+                         Text="{Binding Path=Reporter.ReporterID, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, Converter={StaticResource IntToString}}" 
+                         materialDesign:HintAssist.Hint="Enter your ID here" materialDesign:HintAssist.IsFloating="True"
+                         VerticalAlignment="Bottom" 
+                         Style="{StaticResource MyTextBoxStyle}" Margin="10,0,0,10"/>
+                <toolkit:AutoCompleteBox Grid.Row="2" FontFamily="Century Gothic" BorderBrush="{StaticResource TitleTextColor}" 
+                                         Foreground="#FF28457A"
+                                         FontSize="{StaticResource TextSize}" 
+                                         Style="{StaticResource MyAutoCompleBoxStyle}" 
+                                         ItemsSource="{Binding Addresses,  Mode=TwoWay}" 
+                                         Text="{Binding Reporter.ReporterAddress, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                                         VerticalAlignment="Bottom"
+                                         materialDesign:HintAssist.Hint="Enter your address here" materialDesign:HintAssist.IsFloating="True" Margin="10,0,0,10">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="TextChanged">
+                            <i:InvokeCommandAction Command="{Binding AddressChangedCommand}"/>
+                        </i:EventTrigger>
+                        <i:EventTrigger EventName="SelectionChanged">
+                            <i:InvokeCommandAction Command="{Binding AddressSelectedCommand}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </toolkit:AutoCompleteBox>
+            </Grid>
+            <StackPanel x:Name="stackPanel" Grid.Row="3" Margin="50">
+                <Button x:Name="AddReporterButton" FontFamily="Century Gothic" Content="Add reporter" Command="{Binding Path=AddReporterCommand}" RenderTransformOrigin="0.5,0.5" Background="#FF28457A" BorderBrush="#FF28457A"/>
+                <TextBlock x:Name="SuccessLabel" Visibility="Collapsed" HorizontalAlignment="Center" Text="Reporter added successfully!" FontFamily="Century Gothic" Foreground="{StaticResource TextColor}" FontSize="{StaticResource titleTextSize}"/>
+                <TextBlock x:Name="FailedLabel" Visibility="Collapsed" Foreground="Red" HorizontalAlignment="Center" Text="Failed to add reporter" FontFamily="Century Gothic" FontSize="{StaticResource titleTextSize}"/>
+                <CheckBox x:Name="checkBox1" Visibility="Collapsed" IsChecked="{Binding Signal.SuccessfullyAdded}"/>
+                <CheckBox x:Name="checkBox2" Visibility="Collapsed" IsChecked="{Binding Signal.UnsuccessfullyAdded}"/>
+            </StackPanel>
+        </Grid>
+        <m:Map Grid.Column="1" x:Name="BingMap" FontSize="20" ZoomLevel="14.1" 
+               Center="{Binding Path=Reporter.LatLongReporterLocation,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource StringToLocation}}" Margin="0,100,34,70"
+               CredentialsProvider="AkPhyCeOVq36r1D35gqF20pEwrklZT9WfhIYhzhsRl7NZ2FYOFbazkUSiCWAnJqV">
+            <m:Pushpin x:Name="LocationPin" Location="{Binding Path=Reporter.LatLongReporterLocation,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource StringToLocation}}">
+                <materialDesign:PackIcon Kind="Bomb" Foreground="Black"/>
+            </m:Pushpin>
+        </m:Map>
+    </Grid>
+</UserControl>

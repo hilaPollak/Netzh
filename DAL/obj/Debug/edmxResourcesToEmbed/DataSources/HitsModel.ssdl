@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HitsModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="HitsModelStoreContainer">
+    <EntitySet Name="Reports" EntityType="HitsModel.Store.Reports" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Reporters" EntityType="HitsModel.Store.Reporters" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UpdatedReports" EntityType="HitsModel.Store.UpdatedReports" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK__Report__Reporter__2D27B809" Association="HitsModel.Store.FK__Report__Reporter__2D27B809">
+      <End Role="Reporter" EntitySet="Reporters" />
+      <End Role="Report" EntitySet="Reports" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UpdatedRe__Repor__300424B4" Association="HitsModel.Store.FK__UpdatedRe__Repor__300424B4">
+      <End Role="Report" EntitySet="Reports" />
+      <End Role="UpdatedReport" EntitySet="UpdatedReports" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Reports">
+    <Key>
+      <PropertyRef Name="ReportID" />
+    </Key>
+    <Property Name="ReportID" Type="int" Nullable="false" />
+    <Property Name="TimeFalling" Type="datetime" Nullable="false" />
+    <Property Name="Address" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ReporterID" Type="int" Nullable="false" />
+    <Property Name="AddressCoordinates" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NumberOfBooms" Type="int" Nullable="false" />
+    <Property Name="Updated" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Reporters">
+    <Key>
+      <PropertyRef Name="ReporterID" />
+    </Key>
+    <Property Name="ReporterName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ReporterID" Type="int" Nullable="false" />
+    <Property Name="ReporterAddress" Type="nvarchar" Nullable="false" MaxLength="80" />
+    <Property Name="LatLongAddress" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ReporterProfilePicture" Type="varbinary(max)" Nullable="true" />
+  </EntityType>
+  <EntityType Name="UpdatedReports">
+    <Key>
+      <PropertyRef Name="ReportID" />
+    </Key>
+    <Property Name="NewCoordinates" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ReportID" Type="int" Nullable="false" />
+    <Property Name="NewTime" Type="datetime" Nullable="false" />
+    <Property Name="NumberOfHits" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Report__Reporter__2D27B809">
+    <End Role="Reporter" Type="HitsModel.Store.Reporters" Multiplicity="1" />
+    <End Role="Report" Type="HitsModel.Store.Reports" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Reporter">
+        <PropertyRef Name="ReporterID" />
+      </Principal>
+      <Dependent Role="Report">
+        <PropertyRef Name="ReporterID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UpdatedRe__Repor__300424B4">
+    <End Role="Report" Type="HitsModel.Store.Reports" Multiplicity="1" />
+    <End Role="UpdatedReport" Type="HitsModel.Store.UpdatedReports" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Report">
+        <PropertyRef Name="ReportID" />
+      </Principal>
+      <Dependent Role="UpdatedReport">
+        <PropertyRef Name="ReportID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

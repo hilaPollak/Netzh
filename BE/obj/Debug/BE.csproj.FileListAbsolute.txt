@@ -1,0 +1,10 @@
+C:\Users\Ori Cohen\source\repos\Hits\BE\bin\Debug\BE.dll
+C:\Users\Ori Cohen\source\repos\Hits\BE\bin\Debug\BE.pdb
+C:\Users\Ori Cohen\source\repos\Hits\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
+C:\Users\Ori Cohen\source\repos\Hits\BE\obj\Debug\BE.dll
+C:\Users\Ori Cohen\source\repos\Hits\BE\obj\Debug\BE.pdb
+C:\Users\הילה\Desktop\Hits\BE\bin\Debug\BE.dll
+C:\Users\הילה\Desktop\Hits\BE\bin\Debug\BE.pdb
+C:\Users\הילה\Desktop\Hits\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
+C:\Users\הילה\Desktop\Hits\BE\obj\Debug\BE.dll
+C:\Users\הילה\Desktop\Hits\BE\obj\Debug\BE.pdb

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <appSettings>
+    <add key="GOOGLE_API_KEY" value="AIzaSyDxR81gha1PToNkNulc2eb5eYinqvjUqNw"/>
+  </appSettings>
+</configuration>

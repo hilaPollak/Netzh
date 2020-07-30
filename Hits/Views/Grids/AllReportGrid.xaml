@@ -1,0 +1,107 @@
+﻿<UserControl x:Class="Hits.Views.Grids.AllReportGrid"
+                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:m="clr-namespace:Microsoft.Maps.MapControl.WPF;assembly=Microsoft.Maps.MapControl.WPF"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:toolkit="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Input.Toolkit"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+             xmlns:Converters="clr-namespace:Hits.Helpers.Converters"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:vm="clr-namespace:BL.ViewModels;assembly=BL"
+             xmlns:local="clr-namespace:Hits.Views.Grids"
+             xmlns:helpers="clr-namespace:Hits.Helpers"
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
+             mc:Ignorable="d" Height="600" Width="1024">
+
+    <UserControl.DataContext>
+        <vm:UpdatedReportViewModel/>
+    </UserControl.DataContext>
+
+    <UserControl.Resources>
+        <Converters:TimeToStringConverter x:Key="TimeToString"/>
+        <Converters:IntStringConverter x:Key="IntToString"/>
+        <Converters:StringLocationConverter x:Key="StringToLocation"/>
+        <Converters:UpdatedToText x:Key="BooleanToText"/>
+        <Style x:Key="MyTextBoxStyle" TargetType="TextBox" BasedOn="{StaticResource MaterialDesignTextBox}">
+            <Setter Property="Foreground" Value="{StaticResource TextColor}"/>
+            <Setter Property="FontSize" Value="{StaticResource TextSize}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource TitleTextColor}"/>
+        </Style>
+        
+    </UserControl.Resources>
+
+
+    <Grid x:Name="allreportgrid" Background="LightGray" Margin="250,50,-2,0" RenderTransformOrigin="0.943,0.084">
+        <Grid>
+            <Button  HorizontalAlignment="Left" Margin="30,70,0,0" VerticalAlignment="Top" Width="57"
+            Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" 
+                                Background="{x:Null}" BorderBrush="{x:Null}" Command="{Binding ShowReportCommand}" Foreground="#FF28457A">
+                <materialDesign:PackIcon Kind="Refresh" Height="40" Width="40" Foreground="#FF28457A"/>
+            </Button>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="ALL REPORTS" Foreground="#FF28457A" FontSize="30" VerticalAlignment="Top" Height="42" Width="746" FontFamily="Century Gothic" FontWeight="Bold" Margin="30,28,0,0"/>
+
+        </Grid>
+        <ListBox ItemsSource="{Binding ShownReports, UpdateSourceTrigger=PropertyChanged}" Margin="110,72,12,10">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderThickness="1.9"  Height="120.25" Width="325">
+                        <Border.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Border.RenderTransform>
+                        <Border.BorderBrush>
+                            <DrawingBrush Viewport="0,0,8,8" ViewportUnits="Absolute" TileMode="Tile">
+                                <DrawingBrush.Drawing>
+                                    <DrawingGroup>
+                                        <GeometryDrawing Brush="#FF28457A">
+                                            <GeometryDrawing.Geometry>
+                                                <GeometryGroup>
+                                                    <RectangleGeometry Rect="0,50,50,50" />
+                                                    <RectangleGeometry Rect="50,50,50,50" />
+                                                </GeometryGroup>
+                                            </GeometryDrawing.Geometry>
+                                        </GeometryDrawing>
+                                    </DrawingGroup>
+                                </DrawingBrush.Drawing>
+                            </DrawingBrush>
+                        </Border.BorderBrush>
+                        <Grid Grid.Row="1" Grid.Column="0" Margin="30 0 30 0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="20*"/>
+                                <ColumnDefinition Width="20*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Padding="0" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Content="Report " Margin="10 0 10 0" FontSize="17" FontWeight="Bold" Foreground="#FF28457A" FontFamily="Century Gothic"/>
+                            <Label Padding="0" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Content="Time of Fall: " Margin="10 0 10 0" FontSize="12" Foreground="#FF28457A" FontFamily="Century Gothic"/>
+                            <Label Padding="0" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Content="Location: " Margin="10 0 10 0" FontSize="12" Foreground="#FF28457A" FontFamily="Century Gothic"/>
+                            <Label Padding="0" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" Content="Number of Booms: " Margin="10 0 10 0" FontSize="12" Foreground="#FF28457A" FontFamily="Century Gothic"/>
+                            <Label Padding="0" Grid.Row="5" Grid.Column="0" VerticalAlignment="Center" Content="Status: " Margin="10 0 10 0" FontSize="12" Foreground="#FF28457A" FontFamily="Century Gothic"/>
+
+
+                            <TextBlock Grid.Row="1" x:Name="reportIDText" Grid.Column="1" FontSize="17" FontWeight="Bold" Foreground="#FF28457A" FontFamily="Century Gothic" Text="{Binding Path=ReportID, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource IntToString}}"/>
+                            <TextBlock Grid.Row="2" x:Name="TimeText" Grid.Column="1" FontSize="12" Foreground="#FF28457A" FontFamily="Century Gothic" Text="{Binding Path=FallingTime, UpdateSourceTrigger=PropertyChanged}"/>
+                            <TextBlock Grid.Row="3" x:Name="LocationText" Grid.Column="1" FontSize="12" Foreground="#FF28457A" FontFamily="Century Gothic" Text="{Binding Path=Address, UpdateSourceTrigger=PropertyChanged}"/>
+                            <TextBlock Grid.Row="4" x:Name="BoomText" Grid.Column="1" FontSize="12" Foreground="#FF28457A" FontFamily="Century Gothic" Text="{Binding Path=NumberOfBooms, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource IntToString}}"/>
+                            <TextBlock Grid.Row="5" x:Name="UpdatedText" Grid.Column="1" FontSize="12" Foreground="#FF28457A" FontFamily="Century Gothic" Text="{Binding Path=Updated, Converter={StaticResource BooleanToText}}"/>
+
+
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</UserControl>

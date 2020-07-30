@@ -1,0 +1,28 @@
+C:\Users\Ori Cohen\source\repos\Hits\DAL\bin\Debug\DAL.dll.config
+C:\Users\Ori Cohen\source\repos\Hits\DAL\bin\Debug\DAL.dll
+C:\Users\Ori Cohen\source\repos\Hits\DAL\bin\Debug\DAL.pdb
+C:\Users\Ori Cohen\source\repos\Hits\DAL\bin\Debug\BE.dll
+C:\Users\Ori Cohen\source\repos\Hits\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Ori Cohen\source\repos\Hits\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ori Cohen\source\repos\Hits\DAL\bin\Debug\BE.pdb
+C:\Users\Ori Cohen\source\repos\Hits\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Ori Cohen\source\repos\Hits\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ori Cohen\source\repos\Hits\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\Ori Cohen\source\repos\Hits\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Ori Cohen\source\repos\Hits\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Ori Cohen\source\repos\Hits\DAL\obj\Debug\DAL.dll
+C:\Users\Ori Cohen\source\repos\Hits\DAL\obj\Debug\DAL.pdb
+C:\Users\הילה\Desktop\Hits\DAL\bin\Debug\DAL.dll.config
+C:\Users\הילה\Desktop\Hits\DAL\bin\Debug\DAL.dll
+C:\Users\הילה\Desktop\Hits\DAL\bin\Debug\DAL.pdb
+C:\Users\הילה\Desktop\Hits\DAL\bin\Debug\BE.dll
+C:\Users\הילה\Desktop\Hits\DAL\bin\Debug\EntityFramework.dll
+C:\Users\הילה\Desktop\Hits\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\הילה\Desktop\Hits\DAL\bin\Debug\BE.pdb
+C:\Users\הילה\Desktop\Hits\DAL\bin\Debug\EntityFramework.xml
+C:\Users\הילה\Desktop\Hits\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\הילה\Desktop\Hits\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\הילה\Desktop\Hits\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\הילה\Desktop\Hits\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\הילה\Desktop\Hits\DAL\obj\Debug\DAL.dll
+C:\Users\הילה\Desktop\Hits\DAL\obj\Debug\DAL.pdb

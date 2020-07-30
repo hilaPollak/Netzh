@@ -1,0 +1,203 @@
+C:\Users\Ori Cohen\source\repos\Hits\Hits\obj\Debug\Views\Grids\AnalysisGrid.g.cs
+C:\Users\Ori Cohen\source\repos\Hits\Hits\obj\Debug\Views\MainWindow.g.cs
+C:\Users\Ori Cohen\source\repos\Hits\Hits\obj\Debug\App.g.cs
+C:\Users\Ori Cohen\source\repos\Hits\Hits\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Ori Cohen\source\repos\Hits\Hits\obj\Debug\Hits_MarkupCompile.cache
+C:\Users\Ori Cohen\source\repos\Hits\Hits\obj\Debug\Hits_MarkupCompile.lref
+C:\Users\Ori Cohen\source\repos\Hits\Hits\obj\Debug\Hits.csprojAssemblyReference.cache
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\Hits.exe.config
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\Hits.exe
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\Hits.pdb
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\BE.dll
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\BL.dll
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\BogdanM.LocationServices.Core.dll
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\BogdanM.LocationServices.GoogleMaps.dll
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\EntityFramework.dll
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\GoogleMapsApi.dll
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\MaterialDesignColors.dll
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\Microsoft.Maps.MapControl.WPF.dll
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\System.Windows.Controls.Input.Toolkit.dll
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\System.Windows.Controls.Layout.Toolkit.dll
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\WPFToolkit.dll
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\DAL.dll
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\BE.pdb
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\BL.pdb
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\EntityFramework.xml
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\Microsoft.Maps.MapControl.WPF.xml
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\DAL.pdb
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\DAL.dll.config
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\Ori Cohen\source\repos\Hits\Hits\obj\Debug\Views\Grids\ReporterGrid.g.cs
+C:\Users\Ori Cohen\source\repos\Hits\Hits\obj\Debug\Views\Grids\ReportGrid.g.cs
+C:\Users\Ori Cohen\source\repos\Hits\Hits\obj\Debug\Views\Grids\UpdateReportGrid.g.cs
+C:\Users\Ori Cohen\source\repos\Hits\Hits\obj\Debug\App.baml
+C:\Users\Ori Cohen\source\repos\Hits\Hits\obj\Debug\Views\Grids\AnalysisGrid.baml
+C:\Users\Ori Cohen\source\repos\Hits\Hits\obj\Debug\Views\Grids\ReporterGrid.baml
+C:\Users\Ori Cohen\source\repos\Hits\Hits\obj\Debug\Views\Grids\ReportGrid.baml
+C:\Users\Ori Cohen\source\repos\Hits\Hits\obj\Debug\Views\Grids\UpdateReportGrid.baml
+C:\Users\Ori Cohen\source\repos\Hits\Hits\obj\Debug\Views\MainWindow.baml
+C:\Users\Ori Cohen\source\repos\Hits\Hits\obj\Debug\Hits.g.resources
+C:\Users\Ori Cohen\source\repos\Hits\Hits\obj\Debug\Hits.Properties.Resources.resources
+C:\Users\Ori Cohen\source\repos\Hits\Hits\obj\Debug\Hits.csproj.GenerateResource.cache
+C:\Users\Ori Cohen\source\repos\Hits\Hits\obj\Debug\Hits.csproj.CoreCompileInputs.cache
+C:\Users\Ori Cohen\source\repos\Hits\Hits\obj\Debug\Hits.csproj.CopyComplete
+C:\Users\Ori Cohen\source\repos\Hits\Hits\obj\Debug\Hits.exe
+C:\Users\Ori Cohen\source\repos\Hits\Hits\obj\Debug\Hits.pdb
+C:\Users\Ori Cohen\source\repos\Hits\Hits\obj\Debug\Views\UserControls\PushPinReportView.g.cs
+C:\Users\Ori Cohen\source\repos\Hits\Hits\obj\Debug\Views\UserControls\PushPinReportView.baml
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\LiveCharts.dll
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\LiveCharts.pdb
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\LiveCharts.xml
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\Ori Cohen\source\repos\Hits\Hits\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\הילה\Desktop\Hits\Hits\obj\Debug\Hits.csprojAssemblyReference.cache
+C:\Users\הילה\Desktop\Hits\Hits\obj\Debug\Views\MainWindow.g.cs
+C:\Users\הילה\Desktop\Hits\Hits\obj\Debug\Views\UserControls\PushPinReportView.g.cs
+C:\Users\הילה\Desktop\Hits\Hits\obj\Debug\App.g.cs
+C:\Users\הילה\Desktop\Hits\Hits\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\הילה\Desktop\Hits\Hits\obj\Debug\Hits_MarkupCompile.cache
+C:\Users\הילה\Desktop\Hits\Hits\obj\Debug\Hits_MarkupCompile.lref
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\Hits.exe.config
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\Hits.exe
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\Hits.pdb
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\BE.dll
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\BL.dll
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\BogdanM.LocationServices.Core.dll
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\BogdanM.LocationServices.GoogleMaps.dll
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\GoogleMapsApi.dll
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\LiveCharts.dll
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\MaterialDesignColors.dll
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\Microsoft.Maps.MapControl.WPF.dll
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\Newtonsoft.Json.dll
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\System.Windows.Controls.Input.Toolkit.dll
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\System.Windows.Controls.Layout.Toolkit.dll
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\WPFToolkit.dll
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\DAL.dll
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\BE.pdb
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\BL.pdb
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\EntityFramework.xml
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\LiveCharts.pdb
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\LiveCharts.xml
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\MaterialDesignColors.pdb
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\Microsoft.Maps.MapControl.WPF.xml
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\Newtonsoft.Json.xml
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\DAL.pdb
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\DAL.dll.config
+C:\Users\הילה\Desktop\Hits\Hits\obj\Debug\Views\Grids\AnalysisGrid.g.cs
+C:\Users\הילה\Desktop\Hits\Hits\obj\Debug\Views\Grids\ReporterGrid.g.cs
+C:\Users\הילה\Desktop\Hits\Hits\obj\Debug\Views\Grids\ReportGrid.g.cs
+C:\Users\הילה\Desktop\Hits\Hits\obj\Debug\Views\Grids\UpdateReportGrid.g.cs
+C:\Users\הילה\Desktop\Hits\Hits\obj\Debug\App.baml
+C:\Users\הילה\Desktop\Hits\Hits\obj\Debug\Views\Grids\AnalysisGrid.baml
+C:\Users\הילה\Desktop\Hits\Hits\obj\Debug\Views\Grids\ReporterGrid.baml
+C:\Users\הילה\Desktop\Hits\Hits\obj\Debug\Views\Grids\ReportGrid.baml
+C:\Users\הילה\Desktop\Hits\Hits\obj\Debug\Views\Grids\UpdateReportGrid.baml
+C:\Users\הילה\Desktop\Hits\Hits\obj\Debug\Views\MainWindow.baml
+C:\Users\הילה\Desktop\Hits\Hits\obj\Debug\Views\UserControls\PushPinReportView.baml
+C:\Users\הילה\Desktop\Hits\Hits\obj\Debug\Hits.g.resources
+C:\Users\הילה\Desktop\Hits\Hits\obj\Debug\Hits.Properties.Resources.resources
+C:\Users\הילה\Desktop\Hits\Hits\obj\Debug\Hits.csproj.GenerateResource.cache
+C:\Users\הילה\Desktop\Hits\Hits\obj\Debug\Hits.csproj.CoreCompileInputs.cache
+C:\Users\הילה\Desktop\Hits\Hits\obj\Debug\Hits.csproj.CopyComplete
+C:\Users\הילה\Desktop\Hits\Hits\obj\Debug\Hits.exe
+C:\Users\הילה\Desktop\Hits\Hits\obj\Debug\Hits.pdb
+C:\Hits\Hits\bin\Debug\Hits.exe.config
+C:\Hits\Hits\bin\Debug\Hits.exe
+C:\Hits\Hits\bin\Debug\Hits.pdb
+C:\Hits\Hits\bin\Debug\BE.dll
+C:\Hits\Hits\bin\Debug\BL.dll
+C:\Hits\Hits\bin\Debug\BogdanM.LocationServices.Core.dll
+C:\Hits\Hits\bin\Debug\BogdanM.LocationServices.GoogleMaps.dll
+C:\Hits\Hits\bin\Debug\EntityFramework.dll
+C:\Hits\Hits\bin\Debug\EntityFramework.SqlServer.dll
+C:\Hits\Hits\bin\Debug\GoogleMapsApi.dll
+C:\Hits\Hits\bin\Debug\LiveCharts.dll
+C:\Hits\Hits\bin\Debug\LiveCharts.Wpf.dll
+C:\Hits\Hits\bin\Debug\MaterialDesignColors.dll
+C:\Hits\Hits\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Hits\Hits\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Hits\Hits\bin\Debug\Microsoft.Maps.MapControl.WPF.dll
+C:\Hits\Hits\bin\Debug\Newtonsoft.Json.dll
+C:\Hits\Hits\bin\Debug\System.Windows.Controls.Input.Toolkit.dll
+C:\Hits\Hits\bin\Debug\System.Windows.Controls.Layout.Toolkit.dll
+C:\Hits\Hits\bin\Debug\System.Windows.Interactivity.dll
+C:\Hits\Hits\bin\Debug\WPFToolkit.dll
+C:\Hits\Hits\bin\Debug\DAL.dll
+C:\Hits\Hits\bin\Debug\BE.pdb
+C:\Hits\Hits\bin\Debug\BL.pdb
+C:\Hits\Hits\bin\Debug\BL.dll.config
+C:\Hits\Hits\bin\Debug\EntityFramework.xml
+C:\Hits\Hits\bin\Debug\EntityFramework.SqlServer.xml
+C:\Hits\Hits\bin\Debug\LiveCharts.pdb
+C:\Hits\Hits\bin\Debug\LiveCharts.xml
+C:\Hits\Hits\bin\Debug\LiveCharts.Wpf.pdb
+C:\Hits\Hits\bin\Debug\LiveCharts.Wpf.xml
+C:\Hits\Hits\bin\Debug\MaterialDesignColors.pdb
+C:\Hits\Hits\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Hits\Hits\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Hits\Hits\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Hits\Hits\bin\Debug\Microsoft.Maps.MapControl.WPF.xml
+C:\Hits\Hits\bin\Debug\Newtonsoft.Json.pdb
+C:\Hits\Hits\bin\Debug\Newtonsoft.Json.xml
+C:\Hits\Hits\bin\Debug\System.Windows.Interactivity.xml
+C:\Hits\Hits\bin\Debug\DAL.pdb
+C:\Hits\Hits\bin\Debug\DAL.dll.config
+C:\Hits\Hits\obj\Debug\Hits.csprojAssemblyReference.cache
+C:\Hits\Hits\obj\Debug\Views\Grids\AnalysisGrid.g.cs
+C:\Hits\Hits\obj\Debug\Views\Grids\ReporterGrid.g.cs
+C:\Hits\Hits\obj\Debug\Views\Grids\ReportGrid.g.cs
+C:\Hits\Hits\obj\Debug\Views\Grids\UpdateReportGrid.g.cs
+C:\Hits\Hits\obj\Debug\Views\MainWindow.g.cs
+C:\Hits\Hits\obj\Debug\Views\UserControls\PushPinReportView.g.cs
+C:\Hits\Hits\obj\Debug\App.g.cs
+C:\Hits\Hits\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Hits\Hits\obj\Debug\Hits_MarkupCompile.cache
+C:\Hits\Hits\obj\Debug\Hits_MarkupCompile.lref
+C:\Hits\Hits\obj\Debug\App.baml
+C:\Hits\Hits\obj\Debug\Views\Grids\AnalysisGrid.baml
+C:\Hits\Hits\obj\Debug\Views\Grids\ReporterGrid.baml
+C:\Hits\Hits\obj\Debug\Views\Grids\ReportGrid.baml
+C:\Hits\Hits\obj\Debug\Views\Grids\UpdateReportGrid.baml
+C:\Hits\Hits\obj\Debug\Views\MainWindow.baml
+C:\Hits\Hits\obj\Debug\Views\UserControls\PushPinReportView.baml
+C:\Hits\Hits\obj\Debug\Hits.g.resources
+C:\Hits\Hits\obj\Debug\Hits.Properties.Resources.resources
+C:\Hits\Hits\obj\Debug\Hits.csproj.GenerateResource.cache
+C:\Hits\Hits\obj\Debug\Hits.csproj.CoreCompileInputs.cache
+C:\Hits\Hits\obj\Debug\Hits.csproj.CopyComplete
+C:\Hits\Hits\obj\Debug\Hits.exe
+C:\Hits\Hits\obj\Debug\Hits.pdb
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\EntityFramework.dll
+C:\Users\הילה\Desktop\Hits\Hits\bin\Debug\EntityFramework.SqlServer.dll

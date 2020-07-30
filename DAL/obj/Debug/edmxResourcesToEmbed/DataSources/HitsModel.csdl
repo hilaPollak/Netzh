@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HitsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Report">
+    <Key>
+      <PropertyRef Name="ReportID" />
+    </Key>
+    <Property Name="ReportID" Type="Int32" Nullable="false" />
+    <Property Name="TimeFalling" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ReporterID" Type="Int32" Nullable="false" />
+    <Property Name="AddressCoordinates" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NumberOfBooms" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Reporter" Relationship="Self.FK__Report__Reporter__2D27B809" FromRole="Report" ToRole="Reporter" />
+    <NavigationProperty Name="UpdatedReport" Relationship="Self.FK__UpdatedRe__Repor__300424B4" FromRole="Report" ToRole="UpdatedReport" />
+    <Property Name="Updated" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Reporter">
+    <Key>
+      <PropertyRef Name="ReporterID" />
+    </Key>
+    <Property Name="ReporterName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ReporterID" Type="Int32" Nullable="false" />
+    <Property Name="ReporterAddress" Type="String" MaxLength="80" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LatLongAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Reports" Relationship="Self.FK__Report__Reporter__2D27B809" FromRole="Reporter" ToRole="Report" />
+    <Property Name="ReporterProfilePicture" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UpdatedReport">
+    <Key>
+      <PropertyRef Name="ReportID" />
+    </Key>
+    <Property Name="NewCoordinates" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ReportID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Report" Relationship="Self.FK__UpdatedRe__Repor__300424B4" FromRole="UpdatedReport" ToRole="Report" />
+    <Property Name="NewTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="NumberOfHits" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Report__Reporter__2D27B809">
+    <End Role="Reporter" Type="Self.Reporter" Multiplicity="1" />
+    <End Role="Report" Type="Self.Report" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Reporter">
+        <PropertyRef Name="ReporterID" />
+      </Principal>
+      <Dependent Role="Report">
+        <PropertyRef Name="ReporterID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UpdatedRe__Repor__300424B4">
+    <End Role="Report" Type="Self.Report" Multiplicity="1" />
+    <End Role="UpdatedReport" Type="Self.UpdatedReport" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Report">
+        <PropertyRef Name="ReportID" />
+      </Principal>
+      <Dependent Role="UpdatedReport">
+        <PropertyRef Name="ReportID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="HitsEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Reports" EntityType="Self.Report" />
+    <EntitySet Name="Reporters" EntityType="Self.Reporter" />
+    <EntitySet Name="UpdatedReports" EntityType="Self.UpdatedReport" />
+    <AssociationSet Name="FK__Report__Reporter__2D27B809" Association="Self.FK__Report__Reporter__2D27B809">
+      <End Role="Reporter" EntitySet="Reporters" />
+      <End Role="Report" EntitySet="Reports" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UpdatedRe__Repor__300424B4" Association="Self.FK__UpdatedRe__Repor__300424B4">
+      <End Role="Report" EntitySet="Reports" />
+      <End Role="UpdatedReport" EntitySet="UpdatedReports" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
